@@ -28,7 +28,11 @@ class PostList extends Component {
       <div>
         <h1> Show the List of post Data</h1>
         {posts.length
-          ? posts.map((post) => <div key={post.id}>{post.title}</div>)
+          ? posts.map((post) => (
+              <div key={post.id}>
+                {post.id} . {post.title}
+              </div>
+            ))
           : null}
         {errorMsg ? <div>{errorMsg}</div> : null}
       </div>

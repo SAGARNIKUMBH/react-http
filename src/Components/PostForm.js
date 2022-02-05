@@ -6,7 +6,7 @@ export class PostForm extends Component {
     super(props);
 
     this.state = {
-      userId: "",
+      Id: "",
       title: "",
       body: "",
     };
@@ -30,15 +30,15 @@ export class PostForm extends Component {
   };
 
   render() {
-    const { userId, title, body } = this.state;
+    const { Id, title, body } = this.state;
     return (
       <div>
         <form onSubmit={this.submitHandler}>
           <div>
             <input
               type="text"
-              name="userId"
-              value={userId}
+              name="Id"
+              value={Id}
               onChange={this.changehandler}
             />
           </div>
